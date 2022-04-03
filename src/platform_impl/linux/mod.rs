@@ -467,6 +467,11 @@ impl Window {
     }
 
     #[inline]
+    pub fn set_ime_allowed(&self, _allowed: bool) {
+        error!("`Window::set_ime_allowed` is not yet implemented");
+    }
+
+    #[inline]
     pub fn focus_window(&self) {
         match self {
             #[cfg(feature = "x11")]
